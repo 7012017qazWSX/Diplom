@@ -136,7 +136,7 @@ Flask — это легковесный веб-фреймворк для Python,
 
 Перед началом разработки приложения на Django, его нужно установить. Делается это, с помощью консольной команды “pip install Django”. Далее, чтобы начать разработку проекта, в консоли нужно прописать “django-admin startproject {имя файла}” (рис. 1.1) и (рис. 1.2). 
 
-[Django](https://github.com/7012017qazWSX/Diplom/blob/master/images/Django/Django_1.PNG)
+[Django]https://github.com/7012017qazWSX/Diplom/blob/master/images/Django/Django_1.PNG
 
 (рис. 1.1) 
 
