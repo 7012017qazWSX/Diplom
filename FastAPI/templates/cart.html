@@ -1,0 +1,24 @@
+<!-- templates/cart.html -->
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Корзина</h1>
+{% if message %}
+<p>{{ message }}</p>
+{% else %}
+    {% if items %}
+        <ul>
+            {% for item in items %}
+                <li>
+                    {{ item.title }} - {{ item.price }} руб.
+                    <form action="/cart/remove/{{ item.id }}" method="post" style="display:inline;"> <button type="submit">Убрать</button>
+                    </form>
+                </li>
+            {% endfor %}
+        </ul>
+        <p>Итого: {{ total }} руб.</p>
+    {% else %}
+        <p>Ваша корзина пуста.</p>
+    {% endif %}
+{% endif %}
+{% endblock %}

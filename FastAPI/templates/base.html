@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Книжный магазин</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <nav>
+        <a href="/">Главная</a>
+        <a href="/shop">Магазин</a>
+        <a href="/cart">Корзина</a>
+        <span style="float: right;">
+            {% if user %}
+                Привет, {{ user.username }} | <a href="/logout">Выйти</a>
+            {% else %}
+                <a href="/register">Зарегистрироваться</a>
+                <a href="/login">Войти</a>
+            {% endif %}
+        </span>
+    </nav>
+
+    {% block content %}{% endblock %}
+</body>
+</html>

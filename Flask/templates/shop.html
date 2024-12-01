@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Магазин{% endblock %}
+{% block content %}
+<h1>Книги</h1>
+<ul>
+    {% for book in books %}
+    <li>
+        <strong>{{ book.title }}</strong> автор {{ book.author }} - {{ book.price }} руб.
+        {% if current_user.is_authenticated %}
+            <a href="{{ url_for('add_to_cart', book_id=book.id) }}">Купить</a>
+        {% else %}
+        {% endif %}
+    </li>
+    {% endfor %}
+    <p>Вы не авторизованы. Пожалуйста, <a href="{{ url_for('login') }}">войдите</a> в аккаунт или <a href="{{ url_for('register') }}">зарегистрируйтесь</a>.</p>
+</ul>
+{% endblock %}

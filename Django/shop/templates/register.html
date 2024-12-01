@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Регистрация{% endblock %}
+{% block content %}
+<h1>Регистрация</h1>
+<form method="post">
+    <input type="hidden" name="csrf_token" value=" csrf_token() ">
+    <label>Введите логин (до 30 символов):</label><br>
+    <input type="text" name="username" maxlength="30" required><br>
+    <label>Введите пароль (не менее 8 символов):</label><br>
+    <input type="password" name="password" minlength="8" required><br>
+    <label>Повторите пароль:</label><br>
+    <input type="password" name="confirm_password" minlength="8" required><br>
+    <label>Введите возраст (до 3 цифр):</label><br>
+    <input type="text" name="age" maxlength="3" required><br><br>
+    <button type="submit">Зарегистрироваться</button>
+</form>
+{% endblock %}

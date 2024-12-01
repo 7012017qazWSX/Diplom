@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}Магазин{% endblock %}
+{% block content %}
+<h1>Книги</h1>
+<ul>
+    {% for book in books %}
+    <li>
+        <strong>{{ book.title }}</strong> автор {{ book.author }} - {{ book.price }} руб.
+        {% if user.is_authenticated %}
+            <form method="post" action="{% url 'add_to_cart' book.id %}">
+                {% csrf_token %}
+                <button type="submit">Купить</button>
+            </form>
+        {% else %}
+        <p>Вы не авторизованы. Пожалуйста, <a href="{% url 'login' %}">войдите</a> в аккаунт или <a href="{% url 'register' %}">зарегистрируйтесь</a>.</p>
+        {% endif %}
+    </li>
+    {% endfor %}
+
+</ul>
+{% endblock %}
