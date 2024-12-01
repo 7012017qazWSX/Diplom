@@ -136,29 +136,29 @@ Flask — это легковесный веб-фреймворк для Python,
 
 Перед началом разработки приложения на Django, его нужно установить. Делается это, с помощью консольной команды “pip install Django”. Далее, чтобы начать разработку проекта, в консоли нужно прописать “django-admin startproject {имя файла}” (рис. 1.1) и (рис. 1.2). 
 
-[Django]https://github.com/7012017qazWSX/Diplom/blob/master/images/Django/Django_1.PNG
+[Django](https://github.com/7012017qazWSX/Diplom/blob/master/images/Django/Django_1.PNG)
 
 (рис. 1.1) 
 
-[Django] https://github.com/7012017qazWSX/Diplom/blob/master/images/Django/Django_2.jpg
+[Django](https://github.com/7012017qazWSX/Diplom/blob/master/images/Django/Django_2.jpg)
 
 (рис. 1.2) 
 
 После этого необходимо создать приложение в проекте с помощью команды «python manage.py startapp <название приложения>». Перед тем, как выполнять данную команду необходимо перейти в директорию проекта в терминале с помощью команды «cd <название проекта>». После выполнения команд будет создана директория с приложением (в моём случае shop), в которой находятся инструменты для настройки отображения страниц, взаимодействия с базой данных и аутентификации пользователей. (рис. 1.3). 
 
-
+[Django](https://github.com/7012017qazWSX/Diplom/blob/master/images/Django/Django_3.jpg)
 
 (рис. 1.3) 
 
 Далее к проекту необходимо подключить и само приложение в файле «settings.py», иначе при запуске сервера будет ошибка, либо ничего не будет отображено (рис. 1.4). 
 
-
+[Django](https://github.com/7012017qazWSX/Diplom/blob/master/images/Django/Django_4.jpg)
 
 (рис. 1.4) 
 
 После этого, для того, чтобы взаимодействовать с отображениями страниц в этом в том же файле «settings.py» нужно спуститься в TEMPLATES, а конкретнее в листе “DIRS” и прописать вашу папку с шаблонами например: “[BASE_DIR / ‘templates’]” (рис. 1.5). 
 
-
+[Django](https://github.com/7012017qazWSX/Diplom/blob/master/images/Django/Django_5.jpg)
 
 (рис. 1.5) 
 
@@ -166,17 +166,17 @@ Flask — это легковесный веб-фреймворк для Python,
 
 Функция home возвращает Эта функция отображает главную страницу сайта. Shop_view отвечает за отображение страницы магазина. Функция add_to_cart добавляет книгу в корзину пользователя. Функция cart_view отображает содержимое корзины пользователя. Функция register обрабатывает регистрацию нового пользователя. Функция login_view обрабатывает вход пользователя (рис. 1.6.1), (рис. 1.6.2). 
 
+[Django](https://github.com/7012017qazWSX/Diplom/blob/master/images/Django/Django_6.1.jpg)
 
+(рис. 1.6.1)
 
-(рис. 3.6.1)
-
-
+[Django](https://github.com/7012017qazWSX/Diplom/blob/master/images/Django/Django_6.2.jpg)
 
 (рис. 1.6.2)
 
 Для создания моделей необходимо пользоваться файлом «models.py», в котором будут создаваться таблицы (в моём случае «Book» и «Cart») (рис. 1.7).
 
-
+[Django](https://github.com/7012017qazWSX/Diplom/blob/master/images/Django/Django_7.jpg)
 
 (рис. 1.7)
 
@@ -184,29 +184,29 @@ Flask — это легковесный веб-фреймворк для Python,
 
 После этого мы создаем суперпользователя (для админки) выполнив команду «python manage.py createsuperuser» и в файле admin.py зарегестрируем модели, чтобы потом с помощью администратора добавлять нужные нам книги, где будут указаны их названия, имена авторов и цена (рис. 1.8). 
 
-
+[Django](https://github.com/7012017qazWSX/Diplom/blob/master/images/Django/Django_8.jpg)
 
 (рис. 1.8)
 
 Теперь переходим в папку urls.py в ней нам нужно прописать все пути, которые мы хотим сделать с помощью path (рис. 1.9). 
 
-
+[Django](https://github.com/7012017qazWSX/Diplom/blob/master/images/Django/Django_9.jpg)
 
 (рис. 1.9) 
 
 Чтобы запустить проект осталось прописать в консоли команду “python manage.py runserver”(рис. 1.10).
 
-
+[Django](https://github.com/7012017qazWSX/Diplom/blob/master/images/Django/Django_10.PNG)
 
 (рис. 1.10)
 
 Переходим по ссылке http://127.0.0.1:8000 на главную страницу нашего сайта и чтобы добавить на сайт нужные книги, мы добавляем к нашему адресу http://127.0.0.1:8000/admin/ и в разделе Shop/Books нажимаем кнопку "add" и записываем нужные нам параметры (рис. 1.11.1), (рис. 1.11.2). 
 
-
+[Django](https://github.com/7012017qazWSX/Diplom/blob/master/images/HTML/Home.jpg)
 
 (рис. 1.11.1)
 
-
+[Django](https://github.com/7012017qazWSX/Diplom/blob/master/images/Django/Django_11.jpg)
 
 (рис. 1.11.2)
 
@@ -214,47 +214,47 @@ Flask — это легковесный веб-фреймворк для Python,
 
 Перед началом работы с FastAPI нужно его установить. Сначала также устанавливаем FastAPI “pip install fastapi” и создаём директорию с файлом(рис. 2.1). 
 
-
+[FastAPI](https://github.com/7012017qazWSX/Diplom/blob/master/images/FastAPI/FastAPI%201.PNG)
 
 (рис. 2.1) 
 
 Потом мы создаем необходимые для работы файлы, такие как templates для взаимодействия с отображениями страниц, database для работы с базой данных проекта, main для запуска проекта, models для описания структуры базы данных, schemas для проверки данных и работы с ними (рис. 2.2) 
 
-
+[FastAPI](https://github.com/7012017qazWSX/Diplom/blob/master/images/FastAPI/FastAPI%202.jpg)
 
 (рис. 2.2)
 
 В папке database пишем код для использования библиотек "Databases" и "SQLAlchemy"(рис. 2.3) 
 
-
+[FastAPI](https://github.com/7012017qazWSX/Diplom/blob/master/images/FastAPI/FastAPI%203.jpg)
 
 (рис. 2.3) 
 
 После этого в файле models cоздаем описания структуры базы данных для работы с ними (так называемая декларация схемы) (рис. 2.4). 
 
-
+[FastAPI](https://github.com/7012017qazWSX/Diplom/blob/master/images/FastAPI/FastAPI%204.jpg)
 
 (рис. 2.4)
 
 В файле schemas с помощью библиотеки "Pydantic" создаем модели данных, которые проверяют входные данные на соответсвие заданным типам и структуре (рис. 2.5).
 
-
+[FastAPI](https://github.com/7012017qazWSX/Diplom/blob/master/images/FastAPI/FastAPI%205.jpg)
  
 (рис. 2.5)
 
 В файле main прописываем шаблоны для настройки проекта и отображения их на сайте (рис. 2.6).
 
-
+[FastAPI](https://github.com/7012017qazWSX/Diplom/blob/master/images/FastAPI/FastAPI%206.jpg)
 
 (рис. 2.6)
 
 Далее создаем такой же templates как и в Django, но этот будет содержать Jinja2Templates с указанным путём в папку с шаблонами (рис. 2.7.1),(рис. 2.7.2).
 
-
+[FastAPI](https://github.com/7012017qazWSX/Diplom/blob/master/images/FastAPI/FastAPI%207.1.jpg)
 
 (рис. 2.7.1)
 
- 
+ [FastAPI]()
 
 (рис. 2.7.2)
 
