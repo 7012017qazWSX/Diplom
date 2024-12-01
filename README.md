@@ -140,7 +140,7 @@ Flask — это легковесный веб-фреймворк для Python,
 
 (рис. 1.1) 
 
-
+[Django] https://github.com/7012017qazWSX/Diplom/blob/master/images/Django/Django_2.jpg
 
 (рис. 1.2) 
 
