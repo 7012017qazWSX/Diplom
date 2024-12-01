@@ -254,7 +254,7 @@ Flask — это легковесный веб-фреймворк для Python,
 
 (рис. 2.7.1)
 
- [FastAPI]()
+ [FastAPI](https://github.com/7012017qazWSX/Diplom/blob/5f7e20f8804bdb36a1aedd1f78ff8e90625ddc2e/images/FastAPI/FastAPI%207.2.jpg)
 
 (рис. 2.7.2)
 
@@ -262,7 +262,7 @@ Flask — это легковесный веб-фреймворк для Python,
 
 Для того чтобы начать работу на Flask нужно установить его с помощью консольной команды “pip install Flask, Flask_sqlalchemy Flask_login ”.(рис. 3.1) 
 
-
+[flask](https://github.com/7012017qazWSX/Diplom/blob/5f7e20f8804bdb36a1aedd1f78ff8e90625ddc2e/images/Flast/Flask%201.jpg)
 
 (рис. 3.1) 
 
@@ -270,25 +270,25 @@ Flask — это легковесный веб-фреймворк для Python,
 
 Далее для реализации проекта необходимо установить файлы, app для запуска проекта, init_db для инициализации базы данных, models для создания моделей и templates для взаимодействия с отображениями страниц.(рис. 3.2)
 
-
+[flask](https://github.com/7012017qazWSX/Diplom/blob/5f7e20f8804bdb36a1aedd1f78ff8e90625ddc2e/images/Flast/Flask%202.jpg)
 
 (рис. 3.2) 
 
 В основном файле app настраиваем приложение (рис 3.3) 
 
-
+[flask](https://github.com/7012017qazWSX/Diplom/blob/5f7e20f8804bdb36a1aedd1f78ff8e90625ddc2e/images/Flast/Flask%203.jpg)
 
 (рис. 3.3)
 
 Далее с помощью файла models представлена реализация базовой структуры базы данных для веб-приложения с использованием Flask, SQLAlchemy и Flask-Login. В данном коде создаются модели для работы с книгами, пользователями и корзиной покупок(рис. 3.4).
 
-
+[flask](https://github.com/7012017qazWSX/Diplom/blob/5f7e20f8804bdb36a1aedd1f78ff8e90625ddc2e/images/Flast/Flask%204.jpg)
 
 (рис. 3.4)
 
 После этого с помощью файла init_db инициализируем базу данных и добавляем начальные данные(рис. 3.5).
 
-
+[flask](https://github.com/7012017qazWSX/Diplom/blob/5f7e20f8804bdb36a1aedd1f78ff8e90625ddc2e/images/Flast/Flask%205.jpg)
 
 (рис. 3.5)
 
@@ -296,37 +296,37 @@ Flask — это легковесный веб-фреймворк для Python,
 
 Шаблон base служит как базой для отображения всех страниц на сайте(рис. 4.1).
 
-
-
-
+[HTML](https://github.com/7012017qazWSX/Diplom/blob/5f7e20f8804bdb36a1aedd1f78ff8e90625ddc2e/images/HTML/base.jpg)
 
 (рис. 4.1)
 
 Второй шаблон Home.html выглядит вот так и служит как главной страницей на сайте (рис. 4.2).
 
-
+[HTML](https://github.com/7012017qazWSX/Diplom/blob/5f7e20f8804bdb36a1aedd1f78ff8e90625ddc2e/images/HTML/Home.jpg)
 
 (рис. 4.2)
 
 Третий шаблон Shop служит для продажи книг (рис. 4.3). 
 
-
+[HTML](https://github.com/7012017qazWSX/Diplom/blob/5f7e20f8804bdb36a1aedd1f78ff8e90625ddc2e/images/HTML/Shop.jpg)
 
 (рис. 4.3)
 
 Так же есть шаблон Cart.html он выглядит так (рис. 4.4)
 
-
+[HTML](https://github.com/7012017qazWSX/Diplom/blob/5f7e20f8804bdb36a1aedd1f78ff8e90625ddc2e/images/HTML/Cart.jpg)
 
 (рис.4.4) 
 
-
 В шаблоне Register любой пользователь может зарегестрироваться и купить книги (рис. 4.5).
+
+[HTML](https://github.com/7012017qazWSX/Diplom/blob/5f7e20f8804bdb36a1aedd1f78ff8e90625ddc2e/images/HTML/Register.jpg)
 
 (рис. 4.5)
 
-
 В шаблоне Login зарегестрированный пользователь может вернуться в свой аккаунт и продолжать покупки (рис. 4.6).
+
+[HTML](https://github.com/7012017qazWSX/Diplom/blob/5f7e20f8804bdb36a1aedd1f78ff8e90625ddc2e/images/HTML/Login.jpg)
 
 (рис. 4.6)
 
