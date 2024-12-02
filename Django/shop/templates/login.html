@@ -1,11 +1,9 @@
 {% extends 'base.html' %}
-
 {% block title %}Вход{% endblock %}
-
 {% block content %}
 <h1>Вход</h1>
 <form method="post">
-    <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+    {% csrf_token %}
     <label>Введите логин:</label><br>
     <input type="text" name="username" required><br>
     <label>Введите пароль:</label><br>
