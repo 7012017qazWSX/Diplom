@@ -202,11 +202,11 @@ Flask — это легковесный веб-фреймворк для Python,
 
 Переходим по ссылке http://127.0.0.1:8000 на главную страницу нашего сайта и чтобы добавить на сайт нужные книги, мы добавляем к нашему адресу http://127.0.0.1:8000/admin/ и в разделе Shop/Books нажимаем кнопку "add" и записываем нужные нам параметры (рис. 1.11.1), (рис. 1.11.2). 
 
-[Django](https://github.com/7012017qazWSX/Diplom/blob/master/images/HTML/Home.jpg)
+![Django](https://github.com/7012017qazWSX/Diplom/blob/master/images/HTML/Home.jpg)
 
 (рис. 1.11.1)
 
-[Django](https://github.com/7012017qazWSX/Diplom/blob/master/images/Django/Django_11.jpg)
+![Django](https://github.com/7012017qazWSX/Diplom/blob/master/images/Django/Django_11.jpg)
 
 (рис. 1.11.2)
 
@@ -214,47 +214,47 @@ Flask — это легковесный веб-фреймворк для Python,
 
 Перед началом работы с FastAPI нужно его установить. Сначала также устанавливаем FastAPI “pip install fastapi” и создаём директорию с файлом(рис. 2.1). 
 
-[FastAPI](https://github.com/7012017qazWSX/Diplom/blob/master/images/FastAPI/FastAPI%201.PNG)
+![FastAPI](https://github.com/7012017qazWSX/Diplom/blob/master/images/FastAPI/FastAPI%201.PNG)
 
 (рис. 2.1) 
 
 Потом мы создаем необходимые для работы файлы, такие как templates для взаимодействия с отображениями страниц, database для работы с базой данных проекта, main для запуска проекта, models для описания структуры базы данных, schemas для проверки данных и работы с ними (рис. 2.2) 
 
-[FastAPI](https://github.com/7012017qazWSX/Diplom/blob/master/images/FastAPI/FastAPI%202.jpg)
+![FastAPI](https://github.com/7012017qazWSX/Diplom/blob/master/images/FastAPI/FastAPI%202.jpg)
 
 (рис. 2.2)
 
 В папке database пишем код для использования библиотек "Databases" и "SQLAlchemy"(рис. 2.3) 
 
-[FastAPI](https://github.com/7012017qazWSX/Diplom/blob/master/images/FastAPI/FastAPI%203.jpg)
+![FastAPI](https://github.com/7012017qazWSX/Diplom/blob/master/images/FastAPI/FastAPI%203.jpg)
 
 (рис. 2.3) 
 
 После этого в файле models cоздаем описания структуры базы данных для работы с ними (так называемая декларация схемы) (рис. 2.4). 
 
-[FastAPI](https://github.com/7012017qazWSX/Diplom/blob/master/images/FastAPI/FastAPI%204.jpg)
+![FastAPI](https://github.com/7012017qazWSX/Diplom/blob/master/images/FastAPI/FastAPI%204.jpg)
 
 (рис. 2.4)
 
 В файле schemas с помощью библиотеки "Pydantic" создаем модели данных, которые проверяют входные данные на соответсвие заданным типам и структуре (рис. 2.5).
 
-[FastAPI](https://github.com/7012017qazWSX/Diplom/blob/master/images/FastAPI/FastAPI%205.jpg)
+![FastAPI](https://github.com/7012017qazWSX/Diplom/blob/master/images/FastAPI/FastAPI%205.jpg)
  
 (рис. 2.5)
 
 В файле main прописываем шаблоны для настройки проекта и отображения их на сайте (рис. 2.6).
 
-[FastAPI](https://github.com/7012017qazWSX/Diplom/blob/master/images/FastAPI/FastAPI%206.jpg)
+![FastAPI](https://github.com/7012017qazWSX/Diplom/blob/master/images/FastAPI/FastAPI%206.jpg)
 
 (рис. 2.6)
 
 Далее создаем такой же templates как и в Django, но этот будет содержать Jinja2Templates с указанным путём в папку с шаблонами (рис. 2.7.1),(рис. 2.7.2).
 
-[FastAPI](https://github.com/7012017qazWSX/Diplom/blob/master/images/FastAPI/FastAPI%207.1.jpg)
+![FastAPI](https://github.com/7012017qazWSX/Diplom/blob/master/images/FastAPI/FastAPI%207.1.jpg)
 
 (рис. 2.7.1)
 
- [FastAPI](https://github.com/7012017qazWSX/Diplom/blob/5f7e20f8804bdb36a1aedd1f78ff8e90625ddc2e/images/FastAPI/FastAPI%207.2.jpg)
+![FastAPI](https://github.com/7012017qazWSX/Diplom/blob/5f7e20f8804bdb36a1aedd1f78ff8e90625ddc2e/images/FastAPI/FastAPI%207.2.jpg)
 
 (рис. 2.7.2)
 
@@ -262,7 +262,7 @@ Flask — это легковесный веб-фреймворк для Python,
 
 Для того чтобы начать работу на Flask нужно установить его с помощью консольной команды “pip install Flask, Flask_sqlalchemy Flask_login ”.(рис. 3.1) 
 
-[flask](https://github.com/7012017qazWSX/Diplom/blob/5f7e20f8804bdb36a1aedd1f78ff8e90625ddc2e/images/Flast/Flask%201.jpg)
+![flask](https://github.com/7012017qazWSX/Diplom/blob/5f7e20f8804bdb36a1aedd1f78ff8e90625ddc2e/images/Flast/Flask%201.jpg)
 
 (рис. 3.1) 
 
@@ -270,25 +270,25 @@ Flask — это легковесный веб-фреймворк для Python,
 
 Далее для реализации проекта необходимо установить файлы, app для запуска проекта, init_db для инициализации базы данных, models для создания моделей и templates для взаимодействия с отображениями страниц.(рис. 3.2)
 
-[flask](https://github.com/7012017qazWSX/Diplom/blob/5f7e20f8804bdb36a1aedd1f78ff8e90625ddc2e/images/Flast/Flask%202.jpg)
+![flask](https://github.com/7012017qazWSX/Diplom/blob/5f7e20f8804bdb36a1aedd1f78ff8e90625ddc2e/images/Flast/Flask%202.jpg)
 
 (рис. 3.2) 
 
 В основном файле app настраиваем приложение (рис 3.3) 
 
-[flask](https://github.com/7012017qazWSX/Diplom/blob/5f7e20f8804bdb36a1aedd1f78ff8e90625ddc2e/images/Flast/Flask%203.jpg)
+![flask](https://github.com/7012017qazWSX/Diplom/blob/5f7e20f8804bdb36a1aedd1f78ff8e90625ddc2e/images/Flast/Flask%203.jpg)
 
 (рис. 3.3)
 
 Далее с помощью файла models представлена реализация базовой структуры базы данных для веб-приложения с использованием Flask, SQLAlchemy и Flask-Login. В данном коде создаются модели для работы с книгами, пользователями и корзиной покупок(рис. 3.4).
 
-[flask](https://github.com/7012017qazWSX/Diplom/blob/5f7e20f8804bdb36a1aedd1f78ff8e90625ddc2e/images/Flast/Flask%204.jpg)
+![flask](https://github.com/7012017qazWSX/Diplom/blob/5f7e20f8804bdb36a1aedd1f78ff8e90625ddc2e/images/Flast/Flask%204.jpg)
 
 (рис. 3.4)
 
 После этого с помощью файла init_db инициализируем базу данных и добавляем начальные данные(рис. 3.5).
 
-[flask](https://github.com/7012017qazWSX/Diplom/blob/5f7e20f8804bdb36a1aedd1f78ff8e90625ddc2e/images/Flast/Flask%205.jpg)
+![flask](https://github.com/7012017qazWSX/Diplom/blob/5f7e20f8804bdb36a1aedd1f78ff8e90625ddc2e/images/Flast/Flask%205.jpg)
 
 (рис. 3.5)
 
@@ -296,37 +296,37 @@ Flask — это легковесный веб-фреймворк для Python,
 
 Шаблон base служит как базой для отображения всех страниц на сайте(рис. 4.1).
 
-[HTML](https://github.com/7012017qazWSX/Diplom/blob/5f7e20f8804bdb36a1aedd1f78ff8e90625ddc2e/images/HTML/base.jpg)
+![HTML](https://github.com/7012017qazWSX/Diplom/blob/5f7e20f8804bdb36a1aedd1f78ff8e90625ddc2e/images/HTML/base.jpg)
 
 (рис. 4.1)
 
 Второй шаблон Home.html выглядит вот так и служит как главной страницей на сайте (рис. 4.2).
 
-[HTML](https://github.com/7012017qazWSX/Diplom/blob/5f7e20f8804bdb36a1aedd1f78ff8e90625ddc2e/images/HTML/Home.jpg)
+![HTML](https://github.com/7012017qazWSX/Diplom/blob/5f7e20f8804bdb36a1aedd1f78ff8e90625ddc2e/images/HTML/Home.jpg)
 
 (рис. 4.2)
 
 Третий шаблон Shop служит для продажи книг (рис. 4.3). 
 
-[HTML](https://github.com/7012017qazWSX/Diplom/blob/5f7e20f8804bdb36a1aedd1f78ff8e90625ddc2e/images/HTML/Shop.jpg)
+![HTML](https://github.com/7012017qazWSX/Diplom/blob/5f7e20f8804bdb36a1aedd1f78ff8e90625ddc2e/images/HTML/Shop.jpg)
 
 (рис. 4.3)
 
 Так же есть шаблон Cart.html он выглядит так (рис. 4.4)
 
-[HTML](https://github.com/7012017qazWSX/Diplom/blob/5f7e20f8804bdb36a1aedd1f78ff8e90625ddc2e/images/HTML/Cart.jpg)
+![HTML](https://github.com/7012017qazWSX/Diplom/blob/5f7e20f8804bdb36a1aedd1f78ff8e90625ddc2e/images/HTML/Cart.jpg)
 
 (рис.4.4) 
 
 В шаблоне Register любой пользователь может зарегестрироваться и купить книги (рис. 4.5).
 
-[HTML](https://github.com/7012017qazWSX/Diplom/blob/5f7e20f8804bdb36a1aedd1f78ff8e90625ddc2e/images/HTML/Register.jpg)
+![HTML](https://github.com/7012017qazWSX/Diplom/blob/5f7e20f8804bdb36a1aedd1f78ff8e90625ddc2e/images/HTML/Register.jpg)
 
 (рис. 4.5)
 
 В шаблоне Login зарегестрированный пользователь может вернуться в свой аккаунт и продолжать покупки (рис. 4.6).
 
-[HTML](https://github.com/7012017qazWSX/Diplom/blob/5f7e20f8804bdb36a1aedd1f78ff8e90625ddc2e/images/HTML/Login.jpg)
+![HTML](https://github.com/7012017qazWSX/Diplom/blob/5f7e20f8804bdb36a1aedd1f78ff8e90625ddc2e/images/HTML/Login.jpg)
 
 (рис. 4.6)
 
