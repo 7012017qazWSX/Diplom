@@ -140,25 +140,25 @@ Flask — это легковесный веб-фреймворк для Python,
 
 (рис. 1.1) 
 
-[Django](https://github.com/7012017qazWSX/Diplom/blob/master/images/Django/Django_2.jpg)
+![Django](https://github.com/7012017qazWSX/Diplom/blob/master/images/Django/Django_2.jpg)
 
 (рис. 1.2) 
 
 После этого необходимо создать приложение в проекте с помощью команды «python manage.py startapp <название приложения>». Перед тем, как выполнять данную команду необходимо перейти в директорию проекта в терминале с помощью команды «cd <название проекта>». После выполнения команд будет создана директория с приложением (в моём случае shop), в которой находятся инструменты для настройки отображения страниц, взаимодействия с базой данных и аутентификации пользователей. (рис. 1.3). 
 
-[Django](https://github.com/7012017qazWSX/Diplom/blob/master/images/Django/Django_3.jpg)
+![Django](https://github.com/7012017qazWSX/Diplom/blob/master/images/Django/Django_3.jpg)
 
 (рис. 1.3) 
 
 Далее к проекту необходимо подключить и само приложение в файле «settings.py», иначе при запуске сервера будет ошибка, либо ничего не будет отображено (рис. 1.4). 
 
-[Django](https://github.com/7012017qazWSX/Diplom/blob/master/images/Django/Django_4.jpg)
+![Django](https://github.com/7012017qazWSX/Diplom/blob/master/images/Django/Django_4.jpg)
 
 (рис. 1.4) 
 
 После этого, для того, чтобы взаимодействовать с отображениями страниц в этом в том же файле «settings.py» нужно спуститься в TEMPLATES, а конкретнее в листе “DIRS” и прописать вашу папку с шаблонами например: “[BASE_DIR / ‘templates’]” (рис. 1.5). 
 
-[Django](https://github.com/7012017qazWSX/Diplom/blob/master/images/Django/Django_5.jpg)
+![Django](https://github.com/7012017qazWSX/Diplom/blob/master/images/Django/Django_5.jpg)
 
 (рис. 1.5) 
 
@@ -166,17 +166,17 @@ Flask — это легковесный веб-фреймворк для Python,
 
 Функция home возвращает Эта функция отображает главную страницу сайта. Shop_view отвечает за отображение страницы магазина. Функция add_to_cart добавляет книгу в корзину пользователя. Функция cart_view отображает содержимое корзины пользователя. Функция register обрабатывает регистрацию нового пользователя. Функция login_view обрабатывает вход пользователя (рис. 1.6.1), (рис. 1.6.2). 
 
-[Django](https://github.com/7012017qazWSX/Diplom/blob/master/images/Django/Django_6.1.jpg)
+![Django](https://github.com/7012017qazWSX/Diplom/blob/master/images/Django/Django_6.1.jpg)
 
 (рис. 1.6.1)
 
-[Django](https://github.com/7012017qazWSX/Diplom/blob/master/images/Django/Django_6.2.jpg)
+![Django](https://github.com/7012017qazWSX/Diplom/blob/master/images/Django/Django_6.2.jpg)
 
 (рис. 1.6.2)
 
 Для создания моделей необходимо пользоваться файлом «models.py», в котором будут создаваться таблицы (в моём случае «Book» и «Cart») (рис. 1.7).
 
-[Django](https://github.com/7012017qazWSX/Diplom/blob/master/images/Django/Django_7.jpg)
+![Django](https://github.com/7012017qazWSX/Diplom/blob/master/images/Django/Django_7.jpg)
 
 (рис. 1.7)
 
@@ -184,19 +184,19 @@ Flask — это легковесный веб-фреймворк для Python,
 
 После этого мы создаем суперпользователя (для админки) выполнив команду «python manage.py createsuperuser» и в файле admin.py зарегестрируем модели, чтобы потом с помощью администратора добавлять нужные нам книги, где будут указаны их названия, имена авторов и цена (рис. 1.8). 
 
-[Django](https://github.com/7012017qazWSX/Diplom/blob/master/images/Django/Django_8.jpg)
+![Django](https://github.com/7012017qazWSX/Diplom/blob/master/images/Django/Django_8.jpg)
 
 (рис. 1.8)
 
 Теперь переходим в папку urls.py в ней нам нужно прописать все пути, которые мы хотим сделать с помощью path (рис. 1.9). 
 
-[Django](https://github.com/7012017qazWSX/Diplom/blob/master/images/Django/Django_9.jpg)
+![Django](https://github.com/7012017qazWSX/Diplom/blob/master/images/Django/Django_9.jpg)
 
 (рис. 1.9) 
 
 Чтобы запустить проект осталось прописать в консоли команду “python manage.py runserver”(рис. 1.10).
 
-[Django](https://github.com/7012017qazWSX/Diplom/blob/master/images/Django/Django_10.PNG)
+![Django](https://github.com/7012017qazWSX/Diplom/blob/master/images/Django/Django_10.PNG)
 
 (рис. 1.10)
 
